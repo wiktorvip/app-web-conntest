@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-web-conntest
+  labels:
+    app: app-web-conntest
+spec:
+  containers:
+  - name: app-web-conntestt
+    image: ghcr.io/wiktorvip/app-web-conntest:v1
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 9050

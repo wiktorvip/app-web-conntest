@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: np-svc-app-web-conntest
+spec:
+  selector:
+    app: app-web-conntest
+  type: NodePort
+  ports:
+  - port: 9050
+    targetPort: 9050
+    nodePort: 30050
