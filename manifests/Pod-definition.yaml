@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: app-web-conntestt
-    image: ghcr.io/wiktorvip/app-web-conntest:v1
+    image: ghcr.io/wiktorvip/app-web-conntest:v2
     imagePullPolicy: Always
     ports:
     - containerPort: 9050
