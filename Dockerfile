@@ -1,6 +1,3 @@
-#FROM python:3.6-alpine
-#RUN apk add --no-cache curl python pkgconfig python-dev openssl-dev libffi-dev musl-dev
-
 FROM python:alpine
 
 RUN apk add --no-cache curl pkgconfig openssl-dev libffi-dev musl-dev

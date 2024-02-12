@@ -1,12 +1,12 @@
 name: Build container
 
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-#on:
-#  workflow_dispatch:
+  workflow_dispatch:
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -18,7 +18,7 @@ env:
 
 jobs:
   build:
-    if: "contains(github.event.head_commit.message, 'do-ci')"
+    #if: "contains(github.event.head_commit.message, 'do-ci')"
     runs-on: ubuntu-latest
     permissions:
       packages: write
